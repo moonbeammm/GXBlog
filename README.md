@@ -5,6 +5,13 @@
 Note that:
 
 1.拉取本仓库后需要手动拉取主题代码
-git clone https://github.com/MOxFIVE/yelee.git themes/yelee
+#git clone https://github.com/MOxFIVE/yelee.git themes/Yelee
+git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+
+2.安装插件(在根目录执行)
+npm i hexo-generator-json-content --save
+
+3.修改yilia的配置文件
+将themes文件夹里的_config.yml文件覆盖进themes/yilia/文件夹里
 
 
