@@ -2,7 +2,17 @@
 
 但是本仓库生成的静态文件(html)存储在47.52.250.43服务器上
 
-# Note that:
+# 发布文章
+
+hexo clean && hexo g -d
+
+
+# Note that: 必须做以下两件事
+
+
+## 一.运行sh build.sh
+
+build.sh脚本会帮你做以下4件事
 
 ### 1.拉取本仓库代码后需要手动拉取主题代码
 
@@ -22,14 +32,14 @@ npm i hexo-generator-json-content --save
 
 npm install --save hexo-deployer-git
 
-### 5.设置SSH
 
-a).你的机器需要创建SSH的私钥/公钥
+
+## 二.配置SSH
+
+a).创建你电脑的SSH私钥/公钥
 
 b).将SSH的公钥上传到服务器的git账户下~/.ssh/authorized_keys文件里.
 
-c).配置你机器的~/.ssh/config文件.(Host必须为git.sunxxxxx.com HostName即服务器的IP) 
+c).配置你电脑的~/.ssh/config文件.(Host必须为git.sunxxxxx.com HostName即服务器的IP)
 
-### 6.修改完文章执行以下指令即可
 
-hexo clean && hexo g -d

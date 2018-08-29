@@ -172,49 +172,6 @@ Charles -> 工具栏 -> Proxy-SSL Proxying Settings.
 | 4xx | client error-客户端错误状态码 | 表示请求可能出错,服务器无法处理请求 |
 | 5xx | server error-服务器错误状态码 | 服务器本身的错误,而不是请求出错 |
 
-| 状态码 | 英文名称 | 说明 |
-| --- | --- | --- |
-| 100 | continue | 客户端必须继续发出请求  |
-| 101 | switching protocols | 客户端要求服务器根据请求转换http协议版本 |
-| 200 | ok | 请求成功 |
-| 201 | created | 服务器已经创建了文档,location头给出了他的url |
-| 202 | accepted | 接收和处理,但处理还未完成 |
-| 203 | non-authoriative information | 返回信息不确定或不完整 |
-| 204 | no content | 服务器成功处理了请求,但没有返回任何内容  |
-| 205 | reset content | 服务器完成了请求,用户代理必须复位当前已经浏览过的文件  |
-| 206 | partial content | 服务器已经完成了部分用户的get请求 |
-| 300 | multiple choices | 请求的资源可在多处得到 |
-| 301 | moved permanently | 删除请求数据 |
-| 302 | found | 在其他地址发现了请求数据 |
-| 303 | see other | 建议客户端访问其他url或换成其他访问方式 |
-| 304 | not modified | 客户端请求成功.但文件未变化 |
-| 305 | use proxy | 请求的资源必须从服务器指定的地址得到 |
-| 307 | temporary redirect | 申明请求的资源临时性删除 |
-| 400 | not found | 客户端请求的语法错误,服务器无法解析 |
-| 401 | unauthorized | 请求授权失败 |
-| 402 | payment granted | 保留有效的charge to头响应 |
-| 403 | forbidden | 请求不允许 |
-| 404 | not found | 服务器无法根据客户端的请求找到资源 |
-| 405 | method not allowed | 用户在request-line字段定义的方法不允许 |
-| 406 | not acceptable | 根据用户发送的accept.请求资源不可访问 |
-| 407 | proxy authentication required | 类型401,用户必须首先在代理服务器上得到授权 |
-| 408 | request time out | 客户端没有在用户指定的时间内完成请求 |
-| 409 | conflict | 对当前资源状态,请求不能完成 |
-| 410 | gone | 服务器上不再有此资源且无进一步的参考地址 |
-| 411 | length required | 服务器拒绝用户自定义的content-length属性请求 |
-| 412 | precondition failed | 一个或多个请求头字段在当前请求中错误 |
-| 413 | request entity too large | 请求的资源大于服务器允许的大小 |
-| 414 | request-url too large | 请求的资源url鲳鱼服务器允许的长度 |
-| 415 | unsupported media type | 请求资源不支持请求项目的格式 |
-| 416 | requested range not satisfiable | 请求中包含range请求头字段,在当前请求资源范围内没有range指示值,请求也不包含if-range请求头字段 |
-| 417 | expectation failed | 服务器不满足请求expect头字段指定的期望值,如果是代理服务器,可能是下一级服务器不能满足请求 |
-| 500 | internal server error | 服务器内部错误,无法完成请求 |
-| 501 | not implemented | 服务器不支持请求的函数 |
-| 502 | bad geteway | 服务器暂时不可用,有时是为了防止发生系统过载 |
-| 503 | service unavailable | 服务器过载或暂停维修 |
-| 504 | geteway timeout | 关口过载,服务器使用另一个关口或服务来响应用户,等待时间设定值较长 |
-| 505 | http version not supported | 服务器不支持或拒绝支持请求头中指定的http版本 |
-
 > 1.关于304的用处见[利用服务端304返回码更新本地资源](http://www.jianshu.com/p/0547ac1b2b08)
 
 ## 七.模拟慢网速
