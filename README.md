@@ -32,14 +32,6 @@ $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 
 $ npm install
 
-### 3.安装插件(在根目录执行)
-
-$ npm i hexo-generator-json-content --save
-
-### 4.安装git插件
-
-$ npm install --save hexo-deployer-git
-
 
 
 ## 二.配置SSH
