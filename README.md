@@ -2,9 +2,13 @@
 
 但是本仓库生成的静态文件(html)存储在47.52.250.43服务器上
 
+如果你的电脑上没有安装hexo.需先安装
+
+$ sudo npm install -g hexo
+
 # 发布文章
 
-hexo clean && hexo g -d
+$ hexo clean && hexo g -d
 
 
 # Note that: 必须做以下两件事
@@ -16,21 +20,25 @@ build.sh脚本会帮你做以下4件事
 
 ### 1.拉取本仓库代码后需要手动拉取主题代码
 
-#git clone https://github.com/MOxFIVE/yelee.git themes/Yelee
+#$ git clone https://github.com/MOxFIVE/yelee.git themes/Yelee
 
-git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 
 ### 2.修改yilia主题的配置文件
 
 将themes文件夹里的_config.yml文件覆盖进themes/yilia/文件夹里
 
+### 3.intall hexo
+
+$ npm install
+
 ### 3.安装插件(在根目录执行)
 
-npm i hexo-generator-json-content --save
+$ npm i hexo-generator-json-content --save
 
 ### 4.安装git插件
 
-npm install --save hexo-deployer-git
+$ npm install --save hexo-deployer-git
 
 
 
